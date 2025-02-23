@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>RITDC Portfolio</title>
+			<link rel="stylesheet" type="text/css" href="./styles.css">
+		</head>
+		<body>
+			<nav>	
+				<a class="nav-link" href="#landing">Home</a>
+				<a class="nav-link" href="#tools">Tools</a>
+				<a class="nav-link" href="#projects">Projects</a>
+				<a class="nav-link" href="#contact">Contact</a>
+			</nav>
+
+			<div id="landing">
+				<img id="profile" src="./ritdc.jpg" alt="Richard Ivan Dela Cruz">
+
+				<h1 id="name">Richard Ivan Dela Cruz</h1>
+				<h2 id="title">Web Developer</h2>
+				<p id="intro">Experienced IT professional with 11 years of expertise in software/desktop development and team collaboration. Combines 7 years of corporate experience with 4 years as a freelancer, delivering innovative solutions for diverse clients. Adept at meeting deadlines, exceeding client expectations, and leveraging technical and creative skills to drive results.</p>
+			</div>
+
+			<div id="tools">
+				<h2 id="tools-title">Tools I Use</h2>
+				<img class="tools-img" src="./git.png">
+				<img class="tools-img" src="./sublime.svg">
+				<img class="tools-img" src="./html.png">
+				<img class="tools-img" src="./css.svg">
+			</div>
+
+			<div id="projects">
+				<h2>Projects</h2>
+				<div class="card">
+					<h3>Project 1</h3>
+					<img class="card-img" src="proj1.jpg">
+				</div>
+				<div class="card">
+					<h3>Project 2</h3>
+					<img class="card-img" src="proj2.jpg">
+				</div>
+				<div class="card">
+					<h3>Project 3</h3>
+					<img class="card-img" src="proj3.png">
+				</div>
+			</div>
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+			<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			</script>
+
+		</body>
+		
+		<footer id="contact">
+			<a class="contact-link" href="https://facebook.com/" target="_blank">Facebook</a>
+			<a class="contact-link" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+			<a class="contact-link" href="https://github.com/" target="_blank">GitHub</a>
+			<a class="contact-link" href="https://gitlab.com/gitlab-com" target="_blank">GitLab</a>
+			<!-- <a class="contact-link" href="#landing">Return to Top</a>	 -->
+		</footer>
+</html>
